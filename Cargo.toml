@@ -7,7 +7,9 @@ edition = "2021"
 
 [dependencies]
 clap = {version="4.2.1", features=["derive", "env"]}
-noodles = {version = "0.35.0", features = ["bam", "cram", "core", "sam"]}
+noodles = {version = "0.35.0", features = ["bam", "cram", "core", "sam", "bgzf"]}
+noodles-bam = {features=["async"]}
+noodles-bgzf = {version = "0.20.0", features=["async", "libdeflate"]}
 
 [[bin]]
 name = "oodles"
